@@ -47,6 +47,9 @@ h3{
     font-weight: bold;
     font-size: 25px;
 }
+.info-footer h4{
+    font-size: 25px;
+}
 .contact-office{
     font-weight: 700;
     font-size: 15px;
@@ -93,7 +96,7 @@ header{
 }
 /* MAIN */
 /* hero */
-.container-hero{
+.container-big{
     max-width: 1200px;
     margin: auto;
     padding-top: 100px;
@@ -368,4 +371,28 @@ header{
 }
 .faq ul li:last-child{
     border-bottom: 2px solid #999999;
+}
+/* FOOTER */
+footer{
+    background-color: black;
+    color:white;
+}
+.row.container-big{
+    justify-content: space-between;
+}
+.info-footer{
+    background-color: #61082B;
+    width: calc(100%-10px);
+}
+.info-footer ul {
+    list-style: none;
+    font-family: inherit;
+    padding: 0;
+    margin:10px 0 100px;
+}
+.info-footer ul li{
+    padding-top: 20px;
+}
+.language{
+    margin: 50px 0;
 }
