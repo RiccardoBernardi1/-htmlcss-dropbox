@@ -51,7 +51,7 @@ h3{
     font-weight: 700;
     font-size: 15px;
 }
-.teams h3{
+.teams,.col-sinistra h3{
     font-size: 40px;
 }
 /* HEADER */
@@ -296,6 +296,7 @@ header{
 /* sfondo quadrati */
 .design{
     background-color: #A2D39B;
+    box-shadow: 20 0  inset#D1E9CD;
 }
 .a-s-u{
     background-color: #61082B;
@@ -317,4 +318,26 @@ header{
 }
 .clear-channel{
     background-color: #FFD830;
+}
+/* quinta sezione */
+.row{
+    display: flex;
+}
+.col-sinistra{
+    width: 60%;
+    background-color: #B4D0E7;
+    padding: 140px 110px 140px 0;
+    color: #61082B;
+}
+.col-destra{
+    width: 40%;
+    background-color: #B4D0E7;
+    padding: 150px 55px 130px;
+}
+.background{
+    background-color:#B4D0E7;
+}
+.col-destra .btn{
+    width: 100%;
+    border: none;
 }
