@@ -9,20 +9,25 @@
     margin: auto;
 }
 /* BUTTONS */
-.primary-btn{
+.btn{
     padding: 10px 20px;
     background-color: #0061FF;
     color: white;
     border: none;
 }
-.primary-btn:hover{
+.btn:hover{
     cursor: pointer;
+}
+.secondary-btn{
+    color: black;
+    background-color: white;
+    border: 1px solid;
 }
 /* TYPOGRAPHY */
 body{
     font-family:'Open Sans', sans-serif;
 }
-.primary-btn{
+.btn{
     font-family: inherit;
     font-size: inherit;
 }
@@ -177,7 +182,7 @@ section input {
     display: flex;
     padding: 15px 0;
 }
-.info-plan .primary-btn{
+.info-plan .btn{
     width: 100%;
     margin-bottom: 40px;
 }
@@ -204,4 +209,21 @@ section input {
 }
 .punti-salienti i{
     color: #0061FF;
+}
+/* seconda sezione */
+.partner{
+    display: flex;
+    height: 600px;
+}
+.partner-img{
+    width: 60%;
+    background-color: aqua;
+}
+.partner-text{
+    width: 40%;
+    background-color: red;
+    padding: 50px 40px;
+}
+.partner-text p{
+    margin: 10px 0 30px;
 }
