@@ -5,12 +5,14 @@
 }
 /* COMMON */
 .container{
-
+    width: 1000px;
+    margin: auto;
+    background-color: purple ;
 }
 /* BUTTONS */
 .primary-btn{
-    padding: 7px 18px;
-    background-color: blue;
+    padding: 10px 20px;
+    background-color: #0061FF;
     color: white;
     border: none;
 }
@@ -33,6 +35,18 @@ h1{
     font-size: 50px;
     margin-top: 80px;
 }
+h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.contact-office{
+    font-weight: 700;
+    font-size: 15px;
+}
 /* HEADER */
 header{
     display: flex;
@@ -42,6 +56,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
 }
 .list-inline{
     list-style: none;
@@ -60,7 +75,11 @@ header{
 .right-nav li:last-child{
     padding-left: 0;
 }
+.right-nav button{
+    padding: 6px 15px;
+}
 /* MAIN */
+/* hero */
 .container-hero{
     max-width: 1200px;
     margin: auto;
@@ -89,5 +108,92 @@ header{
     margin: 30px 0;
 }
 .hero-img img{
+    width: 100%;
+}
+/* prima sezione */
+.businnes-plan{
+    padding-top: 150px;
+}
+.businnes-plan label{
+    margin-right: 50px;
+}
+.businnes-plan h2{
+    margin-bottom: 70px;
+}
+/* businnes plans */
+.plans{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    background-color: blue;
+    margin-top: 50px;
+}
+.vertical-plan{
+    width: 30%;
+    height: 900px;
+    background-color: greenyellow;
+    border: 2px solid #D0D0D3;
+}
+.orizontal-plan{
+    height: 300px;
+    width: 100%;
+    margin-top:40px ;
+    border: 2px solid #D0D0D3;
+    background-color:greenyellow ;
+}
+.destinatario{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #D0D0D3;
+}
+.info-plan{
+    padding: 40px 30px;
+}
+.info-plan>*{
+    margin-bottom: 20px;
+}
+.info-plan ul{
+    list-style: none;  
+    padding: 50px 0 0 0;
+}
+.info-plan ul li{
+    display: flex;
+    padding: 15px 0;
+}
+.info-plan .primary-btn{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.info-plan a{
+    color: blue;
+}
+.oppure {
+    padding-bottom: 40px;
+    border-bottom: 2px solid #D0D0D3;
+}
+.punti-salienti i{
+    color: #0061FF;
+}
+.info-plan h4{
+    margin: 100px 0 -20px;
+}
+.orizontal-plan .info-plan {
+    display: flex;
+}
+.orizontal-plan h3{
+    margin-bottom: 20px ;
+}
+.info-plan p{
+    margin-top: 80px;
+}
+.enterprise{
+    width: 70%;
+    padding-right: 20px;
+}
+.contact-button{
+    padding-left: 20px;
+    width: 30%;
+}
+.contact-button button{
     width: 100%;
 }
