@@ -256,3 +256,24 @@ header{
 .teams h3{
     margin-bottom: 70px;
 }
+/* quarta sezione */
+.designit{
+    display: flex;
+}
+.left-col,.central-col,.right-col{
+    width: calc(100vw/3);
+    height: calc(100vw/3);
+}
+.left-col,.right-col{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+.central-col{
+    background-color: blueviolet;
+}
+.img{
+    width: 50%;
+    height: 50%;
+    border: 4px dashed;
+}
