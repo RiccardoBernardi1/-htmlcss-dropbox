@@ -213,7 +213,7 @@ section input {
 /* seconda sezione */
 .partner{
     display: flex;
-    padding: 150px 0 0 0;
+    padding: 150px 0;
 }
 .partner-img{
     width: 60%;
@@ -227,4 +227,23 @@ section input {
 }
 .partner-text p{
     margin: 15px 0 30px;
+}
+/* terza sezione */
+.dropbox-businnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: chocolate;
+}
+.box{
+    width: 30%;
+    margin-top: 70px;
+    background-color: chartreuse;
+}
+.img{
+    height: 200px;
+    background-color: black;
+}
+.box h3{
+    margin: 25px 0;
 }
