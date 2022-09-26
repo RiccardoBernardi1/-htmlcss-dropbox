@@ -51,7 +51,13 @@ h3{
     font-weight: 700;
     font-size: 15px;
 }
-.teams,.col-sinistra h3{
+.teams h3{
+    font-size: 40px;
+}
+.row h3{
+    font-size: 40px;
+}
+.faq h3{
     font-size: 40px;
 }
 /* HEADER */
@@ -138,6 +144,9 @@ header{
     padding: 10px 0;
     text-align: center;
     border-bottom: 2px solid #D0D0D3;
+}
+.vertical-plan,.orizontal-plan{
+    font-size: 14px;
 }
 /* businnes plan verticali */
 .vertical-plan{
@@ -340,4 +349,23 @@ header{
 .col-destra .btn{
     width: 100%;
     border: none;
+}
+/* sezione faq */
+.faq h3{
+    padding: 65px 0 45px;
+}
+.faq ul {
+    list-style: none;
+    font-family: inherit;
+    padding: 0;
+    margin-bottom: 150px;
+}
+.faq ul li{
+    padding: 40px 40px 40px 0 ;
+    border-top: 2px solid #999999;
+    display: flex;
+    justify-content: space-between;
+}
+.faq ul li:last-child{
+    border-bottom: 2px solid #999999;
 }
