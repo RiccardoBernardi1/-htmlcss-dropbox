@@ -51,6 +51,9 @@ h3{
     font-weight: 700;
     font-size: 15px;
 }
+.teams h3{
+    font-size: 40px;
+}
 /* HEADER */
 header{
     display: flex;
@@ -123,9 +126,6 @@ header{
 }
 .businnes-plan h2{
     margin-bottom: 70px;
-}
-section input {
-    
 }
 /* businnes plans */
 .plans{
@@ -233,17 +233,26 @@ section input {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: chocolate;
 }
+/* stile box */
 .box{
     width: 30%;
     margin-top: 70px;
-    background-color: chartreuse;
-}
-.img{
-    height: 200px;
-    background-color: black;
 }
 .box h3{
     margin: 25px 0;
+}
+.box img{
+    width: 100%;
+}
+/* parte finale della sezione */
+.teams{
+    width: 60%;
+    margin: 200px 0 ;
+}
+.teams a{
+    color: blue;
+}
+.teams h3{
+    margin-bottom: 70px;
 }
