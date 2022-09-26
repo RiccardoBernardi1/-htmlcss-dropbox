@@ -213,17 +213,18 @@ section input {
 /* seconda sezione */
 .partner{
     display: flex;
-    height: 600px;
+    padding: 150px 0 0 0;
 }
 .partner-img{
     width: 60%;
-    background-color: aqua;
+}
+.partner-img img{
+    width: 100%;
 }
 .partner-text{
     width: 40%;
-    background-color: red;
-    padding: 50px 40px;
+    padding: 50px 50px;
 }
 .partner-text p{
-    margin: 10px 0 30px;
+    margin: 15px 0 30px;
 }
