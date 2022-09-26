@@ -5,4 +5,39 @@
 }
 /* COMMON */
 
+/* BUTTONS */
+.primary-btn{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+.primary-btn:hover{
+    cursor: pointer;
+}
 /* TYPOGRAPHY */
+body{
+    font-family:'Open Sans', sans-serif;;
+}
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+.left-nav,.right-nav{
+    padding: 20px 0;
+}
+.list-inline{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-inline li {
+    margin: 0 30px 0 0;
+}
+.list-inline li a{
+    text-decoration: none;
+    color: inherit;
+}
