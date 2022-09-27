@@ -26,9 +26,16 @@
     background-color: #0061FF;
     color: white;
     border: none;
+    transition: background-color 0.5s scale 1s;
 }
 .btn:hover{
     cursor: pointer;
+    scale: 1.1;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.btn:active{
+    scale: 1;
+    box-shadow: inset 1px 1px 1px 1px black;
 }
 .secondary-btn{
     color: black;
@@ -105,6 +112,16 @@ header{
 }
 .right-nav button{
     padding: 6px 15px;
+}
+nav li{
+    transition: background-color 0.5s ;
+}
+nav li:hover:not(.not-hover){
+    background-color: rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+}
+.left-nav:first-child:hover{
+    cursor: pointer;
 }
 /* MAIN */
 /* hero */
