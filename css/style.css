@@ -8,6 +8,18 @@
     width: 1000px;
     margin: auto;
 }
+.w-60{
+    width: 60%;
+}
+.w-40{
+    width: 40%;
+}
+.w-30{
+    width: 30%;
+}
+.w-70{
+    width: 70%;
+}
 /* BUTTONS */
 .btn{
     padding: 10px 20px;
@@ -57,7 +69,7 @@ h3{
 .teams h3{
     font-size: 40px;
 }
-.row h3{
+#free-trial h3{
     font-size: 40px;
 }
 .faq h3{
@@ -136,6 +148,7 @@ header{
 .businnes-plan h2{
     margin-bottom: 70px;
 }
+
 /* businnes plans */
 .plans{
     display: flex;
@@ -148,19 +161,14 @@ header{
     text-align: center;
     border-bottom: 2px solid #D0D0D3;
 }
-.vertical-plan,.orizontal-plan{
-    font-size: 14px;
-}
-/* businnes plan verticali */
-.vertical-plan{
-    width: 30%;
+.plans .w-30,.orizontal-plan{
     border: 2px solid #D0D0D3;
+    font-size: 14px;
 }
 /* businnes plan orizzontale */
 .orizontal-plan{
     width: 100%;
     margin-top:40px ;
-    border: 2px solid #D0D0D3;
 }
 .orizontal-plan .info-plan {
     display: flex;
@@ -168,15 +176,13 @@ header{
 .orizontal-plan h3{
     margin-bottom: 20px ;
 }
-.enterprise{
-    width: 70%;
+.orizontal-plan .w-70{
     padding-right: 20px;
 }
-.contact-button{
+.orizontal-plan .w-30{
     padding-left: 20px;
-    width: 30%;
 }
-.contact-button button{
+.w-30 button{
     width: 100%;
 }
 /* info businnes plan */
@@ -203,7 +209,16 @@ header{
 }
 .oppure {
     padding-bottom: 40px;
-    border-bottom: 2px solid #D0D0D3;
+    position: relative;
+}
+.oppure::after{
+    content: '';
+    position: absolute;
+    background-color: #D0D0D3;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
 }
 .info-plan h4{
     margin: 100px 0 -20px;
@@ -227,45 +242,39 @@ header{
     display: flex;
     padding: 150px 0;
 }
-.partner-img{
-    width: 60%;
-}
-.partner-img img{
+.partner .w-60 img{
     width: 100%;
 }
-.partner-text{
-    width: 40%;
+.partner .w-40{
     padding: 50px 50px;
 }
-.partner-text p{
+.partner .w-40 p{
     margin: 15px 0 30px;
 }
 /* terza sezione */
-.dropbox-businnes{
+.dropbox-business{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 /* stile box */
-.box{
-    width: 30%;
+.dropbox-business .w-30{
     margin-top: 70px;
 }
-.box h3{
+.dropbox-business .w-30 h3{
     margin: 25px 0;
 }
-.box img{
+.w-30 img{
     width: 100%;
 }
 /* parte finale della sezione */
-.teams{
-    width: 60%;
+.dropbox-business .w-60{
     margin: 200px 0 ;
 }
-.teams a{
+.dropbox-business a{
     color: blue;
 }
-.teams h3{
+.dropbox-business .w-60 h3{
     margin-bottom: 70px;
 }
 /* quarta sezione */
@@ -292,6 +301,14 @@ header{
 .central-col{
     padding: 50px;
     background-color: #F5F5F5;
+    overflow: auto;
+}
+.central-col div::before{
+    content: '';
+    position: absolute;
+    background-color: #D0D0D3;
+    width: 4vw;
+    height: 2px;
 }
 /* quadrati */
 .square{
@@ -308,7 +325,7 @@ header{
 /* sfondo quadrati */
 .design{
     background-color: #A2D39B;
-    box-shadow: 20 0  inset#D1E9CD;
+    box-shadow: 0 0 0 1vw inset #D1E9CD;
 }
 .a-s-u{
     background-color: #61082B;
@@ -332,26 +349,23 @@ header{
     background-color: #FFD830;
 }
 /* quinta sezione */
-.row{
+#free-trial .container{
     display: flex;
 }
-.col-sinistra{
-    width: 60%;
-    background-color: #B4D0E7;
+#free-trial .w-60{
     padding: 140px 110px 140px 0;
     color: #61082B;
 }
-.col-destra{
-    width: 40%;
-    background-color: #B4D0E7;
-    padding: 150px 55px 130px;
+#free-trial .w-40{
+    padding: 150px 0 130px 100px;
 }
-.background{
+#free-trial{
     background-color:#B4D0E7;
 }
-.col-destra .btn{
+#free-trial .btn{
     width: 100%;
     border: none;
+
 }
 /* sezione faq */
 .faq h3{
@@ -365,19 +379,35 @@ header{
 }
 .faq ul li{
     padding: 40px 40px 40px 0 ;
-    border-top: 2px solid #999999;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
-.faq ul li:last-child{
-    border-bottom: 2px solid #999999;
+.faq ul li::before{
+    content: '';
+    position: absolute;
+    background-color: #999999;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+.faq ul li:last-child::after{
+    content: '';
+    position: absolute;
+    background-color: #999999;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
 }
 /* FOOTER */
 footer{
     background-color: black;
     color:white;
 }
-.row.container-big{
+footer .container-big{
+    display: flex;
     justify-content: space-between;
 }
 .info-footer{
@@ -392,9 +422,23 @@ footer{
 .info-footer ul li{
     padding-top: 20px;
 }
+.info-footer ul li a{
+    text-decoration: none;
+    color: inherit;
+}
 .language{
-    margin: 50px 0;
+    padding: 50px 0;
+    position: relative;
 }
 .language span {
     padding: 0 5px;
+}
+.language::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 75%;
+    height: 2px;
+    top: 0;
+    left: 0;
 }
