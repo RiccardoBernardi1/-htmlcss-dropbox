@@ -73,7 +73,7 @@ h3{
     font-weight: 700;
     font-size: 15px;
 }
-.teams h3{
+.dropbox-business .w-60 h3{
     font-size: 40px;
 }
 #free-trial h3{
@@ -161,11 +161,24 @@ nav li:hover:not(.not-hover){
 }
 .businnes-plan label{
     margin-right: 50px;
+    vertical-align: middle;
 }
 .businnes-plan h2{
     margin-bottom: 70px;
 }
-
+.businnes-plan input{
+    appearance: none;
+    border: 1px solid grey;
+    padding:10px;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+.businnes-plan input:hover{
+    cursor: pointer;
+}
+.businnes-plan input:checked{
+    box-shadow: inset 0 0 0 5px blue;
+}
 /* businnes plans */
 .plans{
     display: flex;
@@ -398,6 +411,7 @@ nav li:hover:not(.not-hover){
     padding: 40px 40px 40px 0 ;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
 }
 .faq ul li::before{
@@ -417,6 +431,19 @@ nav li:hover:not(.not-hover){
     height: 2px;
     bottom: 0;
     left: 0;
+}
+.hover-faq{
+    margin-top: 50px;
+    display: none;
+}
+.faq li:hover .hover-faq{
+    display: block;
+}
+.faq li:hover .fa-chevron-down{
+    transform: rotate(180deg);
+}
+.faq .fa-chevron-down{
+    transition: transform 0.5s;
 }
 /* FOOTER */
 footer{
