@@ -82,6 +82,12 @@ h3{
 .faq h3{
     font-size: 40px;
 }
+.faq li{
+    font-weight: 700;
+}
+.faq .hover-faq{
+    font-weight: 400;
+}
 /* HEADER */
 header{
     display: flex;
@@ -259,6 +265,9 @@ nav li:hover:not(.not-hover){
 }
 .info-plan p{
     margin-top: 80px;
+}
+.year-price{
+    display: none;
 }
 /* punti salienti */
 .punti-salienti {
