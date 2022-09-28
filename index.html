@@ -19,9 +19,9 @@
     <body>
         <!-- HEADER -->
         <!-- navigazione sinistra -->
-        <header>
+        <header class="flex-between">
             <nav class="left-nav">
-                <ul class="list-inline">
+                <ul class="list-inline flex">
                     <li class="not-hover">
                         <img src="img/logo-small.png" alt="Logo Dropbox">
                     </li>
@@ -39,7 +39,7 @@
             <!-- /navigazione sinistra -->
             <!-- navigazione destra -->
             <nav class="right-nav">
-                <ul class="list-inline">
+                <ul class="list-inline flex">
                     <li>
                         <a href="">Supporto</a>
                     </li>
@@ -60,7 +60,7 @@
         <!-- MAIN -->
         <main>
             <!-- hero -->
-            <div class="background-hero">
+            <div id="hero">
                 <div class="container-big">
                     <!-- titolo -->
                     <div class="title">
@@ -68,7 +68,7 @@
                     </div>
                     <!-- /titolo -->
                     <!-- contenuto hero -->
-                    <div class="content-hero">
+                    <div class="content-hero flex">
                         <!-- testo e bottoni hero -->
                         <div class="hero-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis commodi doloribus voluptates exercitationem, tempore hic repudiandae quos perferendis dolorem atque laudantium quia perspiciatis beatae. Et error officia optio. Eaque, illum.</p>
@@ -86,351 +86,352 @@
                 </div>
             </div>
             <!-- /hero -->
-                <!-- prima sezione -->
-                <section class="container businnes-plan">
-                    <!-- titolo sezione -->
-                    <h2>Trova il piano businnes che fa per te</h2>
-                    <!-- /titolo sezione -->
-                    <!-- input fatturazione -->
-                    <input type="radio" name="fatturazione" id="" value="Fatturazione-mensile">
-                    <label for="fatturazione">Fatturazione mensile</label>
-                    <input type="radio" name="fatturazione" id="" value="Fatturazione-annuale">
-                    <label for="fatturazione">Fatturazione annuale</label>
-                    <div class="plans">
-                    <!-- /input fatturazione -->
-                        <!-- businnes plans -->
-                        <!-- piano 1 -->
-                        <div class="vertical-plan w-30">
-                            <!-- destinatario -->
-                            <div class="destinatario">
-                                <div><i class="fa-solid fa-user"></i> Singolo</div>
-                            </div>
-                            <!-- /destinatario -->
-                            <!-- info business plan -->
-                            <div class="info-plan">
-                                <h3>Professional</h3>                               
-                                <div class="month-price">
-                                    <strong>€ 12.00</strong>
-                                </div>
-                                <span>/mese</span>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-user"></i>
-                                        <div>1 utente</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-folder"></i>
-                                        <div>5TB di spazio di archiviazione sicuro</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        <div>Funzioni di produttività premium e condivisione di file semplice e sicura</div>
-                                    </li>
-                                </ul>
-                                <button class="btn">Prova gratis per 30 giorni</button>
-                                <span class="oppure">oppure</span>
-                                <a href="">acquista ora</a>
-                                <h4>Punti salienti del piano</h4>
-                                <ul class="punti-salienti">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Invia file fino a 100 GB con Dropbox Transfert</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Cartelle offline su dispositivi mobili</div>
-                                    </li>
-                                </ul>
-                            </div> 
-                            <!-- /info business plan -->
-                        </div>
-                        <!-- /piano 1 -->
-                        <!-- piano 2 -->
-                        <div class="vertical-plan w-30">
-                            <!-- destinatario -->
-                            <div class="destinatario">
-                                <div><i class="fa-solid fa-people-group"></i> Team</div>
-                            </div>
-                            <!-- /destinatario -->
-                            <!-- info business plan -->
-                            <div class="info-plan">
-                                <h3>Advanced</h3>                               
-                                <div class="month-price">
-                                    <strong>€ 18.00</strong>
-                                </div>
-                                <span>/utente/mese</span>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-user"></i>
-                                        <div>3 o più utenti</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-folder"></i>
-                                        <div>Tutto lo spazio di cui hai bisogno per il tuo team</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        <div>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
-                                    </li>
-                                </ul>
-                                <button class="btn">Prova gratis per 30 giorni</button>
-                                <span class="oppure">oppure</span>
-                                <a href="">acquista ora</a>
-                                <h4>Punti salienti del piano</h4>
-                                <ul class="punti-salienti">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Nessun limite di spazio per i file</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Cartelle offline su dispositivi mobili</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Risparmio del 50% rispetto alle iscrizioni singole</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Possibilità si inserire nuovi membri del team</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Gestione dei permessi in base ai ruoli</div>
-                                    </li>
-                                </ul>
-                            </div> 
-                            <!-- /info business plan -->
-                        </div>
-                        <!-- /piano 2 -->
-                        <!-- piano 3 -->
-                        <div class="vertical-plan w-30">
-                            <!-- destinatario -->
-                            <div class="destinatario">
-                                <div><i class="fa-solid fa-building"></i> Azienda</div>
-                            </div>
-                            <!-- /destinatario -->
-                            <!-- info business plan -->
-                            <div class="info-plan">
-                                <h3>Enterprise</h3>                               
-                                <div>
-                                    <strong>Contattaci</strong>
-                                </div>
-                                <span>-</span>
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-user"></i>
-                                        <div>10 o più utenti</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-folder"></i>
-                                        <div>Soluzioni personalizzabili per la tua azienda</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        <div>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</div>
-                                    </li>
-                                </ul>
-                                <button class="btn">Prova gratis per 30 giorni</button>
-                                <span class="oppure">oppure</span>
-                                <a href="">acquista ora</a>
-                                <h4>Punti salienti del piano</h4>
-                                <ul class="punti-salienti">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Cartelle offline su dispositivi mobili</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Servizio assistenza 24/h</div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <div>Possibilità di personalizzazione totale</div>
-                                    </li>
-                                </ul>
-                            </div> 
-                            <!-- /info business plan -->
-                        </div>
-                        <!-- /piano 3 -->
-                    </div>
-                    <!-- piano 4 -->
-                    <div class="orizontal-plan">
+            <!-- prima sezione -->
+            <section id="business-plan" class="container">
+                <!-- titolo sezione -->
+                <h2>Trova il piano businnes che fa per te</h2>
+                <!-- /titolo sezione -->
+                <!-- input fatturazione -->
+                <input type="radio" name="fatturazione" id="" value="Fatturazione-mensile">
+                <label for="fatturazione">Fatturazione mensile</label>
+                <input type="radio" name="fatturazione" id="" value="Fatturazione-annuale">
+                <label for="fatturazione">Fatturazione annuale</label>
+                <div class="plans flex-between">
+                <!-- /input fatturazione -->
+                    <!-- businnes plans -->
+                    <!-- piano 1 -->
+                    <div class="vertical-plan w-30">
                         <!-- destinatario -->
                         <div class="destinatario">
-                            <div>Singolo</div>
+                            <div><i class="fa-solid fa-user"></i> Singolo</div>
                         </div>
                         <!-- /destinatario -->
                         <!-- info business plan -->
                         <div class="info-plan">
-                            <div class="w-70">
-                                <h3>Professional</h3>                               
-                                <span>Contatta l'ufficio vendite per i prezzi</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum ullam ratione aliquid voluptates veniam iusto? Similique officia</p>
+                            <h3>Professional</h3>                               
+                            <div class="month-price">
+                                <strong>€ 12.00</strong>
                             </div>
-                            <div class="w-30">
-                                <button class="btn">Contatta l'ufficio vendite</button>
-                            </div>
+                            <span>/mese</span>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-user"></i>
+                                    <div>1 utente</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div>5TB di spazio di archiviazione sicuro</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <div>Funzioni di produttività premium e condivisione di file semplice e sicura</div>
+                                </li>
+                            </ul>
+                            <button class="btn">Prova gratis per 30 giorni</button>
+                            <span class="oppure">oppure</span>
+                            <a href="">acquista ora</a>
+                            <h4>Punti salienti del piano</h4>
+                            <ul class="punti-salienti">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Invia file fino a 100 GB con Dropbox Transfert</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Cartelle offline su dispositivi mobili</div>
+                                </li>
+                            </ul>
                         </div> 
-                        <!-- /info business plan --> 
+                        <!-- /info business plan -->
                     </div>
-                    <!-- /piano 4 -->
-                    <!-- /businnes plans -->
-                </section>
-                <!-- /prima sezione -->
-                <!-- seconda sezione -->
-                <section class="partner container">
+                    <!-- /piano 1 -->
+                    <!-- piano 2 -->
+                    <div class="vertical-plan w-30">
+                        <!-- destinatario -->
+                        <div class="destinatario">
+                            <div><i class="fa-solid fa-people-group"></i> Team</div>
+                        </div>
+                        <!-- /destinatario -->
+                        <!-- info business plan -->
+                        <div class="info-plan">
+                            <h3>Advanced</h3>                               
+                            <div class="month-price">
+                                <strong>€ 18.00</strong>
+                            </div>
+                            <span>/utente/mese</span>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-user"></i>
+                                    <div>3 o più utenti</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div>Tutto lo spazio di cui hai bisogno per il tuo team</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <div>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
+                                </li>
+                            </ul>
+                            <button class="btn">Prova gratis per 30 giorni</button>
+                            <span class="oppure">oppure</span>
+                            <a href="">acquista ora</a>
+                            <h4>Punti salienti del piano</h4>
+                            <ul class="punti-salienti">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Nessun limite di spazio per i file</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Cartelle offline su dispositivi mobili</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Risparmio del 50% rispetto alle iscrizioni singole</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Possibilità si inserire nuovi membri del team</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Gestione dei permessi in base ai ruoli</div>
+                                </li>
+                            </ul>
+                        </div> 
+                        <!-- /info business plan -->
+                    </div>
+                    <!-- /piano 2 -->
+                    <!-- piano 3 -->
+                    <div class="vertical-plan w-30">
+                        <!-- destinatario -->
+                        <div class="destinatario">
+                            <div><i class="fa-solid fa-building"></i> Azienda</div>
+                        </div>
+                        <!-- /destinatario -->
+                        <!-- info business plan -->
+                        <div class="info-plan">
+                            <h3>Enterprise</h3>                               
+                            <div>
+                                <strong>Contattaci</strong>
+                            </div>
+                            <span>-</span>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-user"></i>
+                                    <div>10 o più utenti</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div>Soluzioni personalizzabili per la tua azienda</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <div>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</div>
+                                </li>
+                            </ul>
+                            <button class="btn">Prova gratis per 30 giorni</button>
+                            <span class="oppure">oppure</span>
+                            <a href="">acquista ora</a>
+                            <h4>Punti salienti del piano</h4>
+                            <ul class="punti-salienti">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Cartelle offline su dispositivi mobili</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Servizio assistenza 24/h</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Possibilità di personalizzazione totale</div>
+                                </li>
+                            </ul>
+                        </div> 
+                        <!-- /info business plan -->
+                    </div>
+                    <!-- /piano 3 -->
+                </div>
+                <!-- piano 4 -->
+                <div class="orizontal-plan">
+                    <!-- destinatario -->
+                    <div class="destinatario">
+                        <div><i class="fa-solid fa-building"></i> Team</div>
+                    </div>
+                    <!-- /destinatario -->
+                    <!-- info business plan -->
+                    <div class="info-plan flex">
+                        <div class="w-70">
+                            <h3>Enterprise</h3>                               
+                            <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum ullam ratione aliquid voluptates veniam iusto? Similique officia</p>
+                        </div>
+                        <div class="w-30">
+                            <button class="btn">Contatta l'ufficio vendite</button>
+                        </div>
+                    </div> 
+                    <!-- /info business plan --> 
+                </div>
+                <!-- /piano 4 -->
+                <!-- /businnes plans -->
+            </section>
+            <!-- /prima sezione -->
+            <!-- seconda sezione -->
+            <section id="partner" class="flex container">
+                <div class="w-60">
+                    <img src="img/partner.png" alt="Immagine partner">
+                </div>
+                <div class="w-40">
+                    <h3>Entra in contatto con un partner Dropbox</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aperiam, architecto in sequi consequuntur quia nulla minus ducimus. Esse quasi soluta explicabo magni blanditiis ratione commodi, tenetur voluptatibus nostrum facere.</p>
+                    <button class="btn secondary-btn">Trova un partner</button>
+                </div>
+            </section>
+            <!-- /seconda sezione --> 
+            <!-- terza sezione  -->
+            <section id="dropbox-business" class="flex-wrap container">
+                <!-- titolo terza sezione -->
+                <h2>Esegui più operazioni con Dropbox business</h2>
+                <!-- /titolo terza sezione -->
+                <!-- primo box -->
+                <div class="w-30">
+                    <img src="img/business-feature-switching-tools.png" alt="immagine switching tools">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
+                </div>
+                    <!-- /primo box -->
+                    <!-- secondo box -->
+                <div class="w-30">
+                    <img src="img/business-feature-send-files-it.png" alt="immagine send files">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
+                </div>
+                    <!-- /secondo box -->
+                    <!-- terzo box -->
+                <div class="w-30">
+                    <img src="img/business-feature-coordinate-it.png" alt="immagine coordinate">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
+                </div>
+                    <!-- /terzo box -->
+                    <!-- quarto box -->
+                <div class="w-30">
+                    <img src="img/business-feature-integrations-it.png" alt="immagine integrations">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
+                </div>
+                    <!-- /quarto box -->
+                    <!-- quinto box -->
+                <div class="w-30">
+                    <img src="img/business-feature-multi-device.png" alt="Immagine multi device">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
+                </div>
+                    <!-- /quinto box -->
+                    <!-- sesto box -->
+                <div class="w-30">
+                    <img src="img/business-feature-security.png" alt="Immagine security">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
+                </div>
+                <!-- /sesto box -->
+                <!-- parte finale della sezione -->
+                <div class="w-60">
+                    <h3>Più di 500.000 team utilizzano Dropbox Business</h3>
+                    <a href="">Scopri di più sui nostri prodotti</a>
+                </div>
+                <!-- /parte finale della sezione -->
+            </section>
+            <!-- /terza sezione  -->
+            <!-- quarta sezione -->
+            <section id="designit" class="flex">
+                <!-- colonna sinistra -->
+                <div class="col flex-wrap">
+                        <div class="square design">
+                            <img src="img/designit.svg" alt="Logo Designit 2">
+                        </div>
+                        <div class="square a-s-u">
+                            <img src="img/arizona_state_university.svg" alt="Logo Designit 2">
+                        </div>
+                        <div class="square u-f">
+                            <img src="img/university_of_florida.svg" alt="Logo Designit 2">
+                        </div>
+                        <div class="square topps">
+                            <img src="img/topps.svg" alt="Logo Designit 2">
+                        </div>
+                    </div>                       
+                </div>
+                <!-- /colonna sinistra -->
+                <!-- colonna centrale -->
+                <div class="col central">
+                    <img src="img/designit.svg" alt="Logo Designit">
+                    <hr>
+                    <div>
+                        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, tempore molestias iusto eos voluptatum sed delectus tenetur veritatis ad fuga, necessitatibus quos eaque magnam! Nulla ipsum modi assumenda quia aut?"</p>
+                    </div>                       
+                    <span> Morten Thomsen, Global IT Lead</span>
+                </div>
+                <!-- /colonna centrale -->
+                <!-- colonna destra -->
+                <div class="col flex-wrap">
+                        <div class="square world-bicycle">
+                            <img src="img/world_bicycle_relief.svg" alt="Logo Designit 2">
+                        </div>
+                        <div class="square hearst">
+                            <img src="img/hearst_corp.svg" alt="Logo Designit 2">
+                        </div>
+                        <div class="square lonely-planet">
+                            <img src="img/lonely_planet.svg" alt="Logo Designit 2">
+                        </div>
+                        <div class="square clear-channel">
+                            <img src="img/clear_channel.svg" alt="Logo Designit 2">
+                        </div>
+                    </div>                       
+                </div>
+                <!-- /colonna destra -->
+            </section>
+            <!-- /quarta sezione -->
+            <!-- quinta sezione -->
+            <section id="free-trial">
+                <div class="container flex">
                     <div class="w-60">
-                        <img src="img/partner.png" alt="Immagine partner">
+                        <h3>Porta Dropbox Business nella tua azienda</h3>
                     </div>
                     <div class="w-40">
-                        <h3>Entra in contatto con un partner Dropbox</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aperiam, architecto in sequi consequuntur quia nulla minus ducimus. Esse quasi soluta explicabo magni blanditiis ratione commodi, tenetur voluptatibus nostrum facere.</p>
-                        <button class="btn secondary-btn">Trova un partner</button>
+                        <button class="btn secondary-btn">Inizia la tua prova gratuita</button>
                     </div>
-                </section>
-                <!-- /seconda sezione --> 
-                <!-- terza sezione  -->
-                <section class="container dropbox-business">
-                    <!-- titolo terza sezione -->
-                    <h2>Esegui più operazioni con Dropbox business</h2>
-                    <!-- /titolo terza sezione -->
-                    <!-- primo box -->
-                    <div class="w-30">
-                        <img src="img/business-feature-switching-tools.png" alt="immagine switching tools">
-                        <h3>Passa di meno da uno strumento all'altro</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
-                    </div>
-                     <!-- /primo box -->
-                       <!-- secondo box -->
-                    <div class="w-30">
-                        <img src="img/business-feature-send-files-it.png" alt="immagine send files">
-                        <h3>Passa di meno da uno strumento all'altro</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
-                    </div>
-                     <!-- /secondo box -->
-                       <!-- terzo box -->
-                    <div class="w-30">
-                        <img src="img/business-feature-coordinate-it.png" alt="immagine coordinate">
-                        <h3>Passa di meno da uno strumento all'altro</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
-                    </div>
-                     <!-- /terzo box -->
-                     <!-- quarto box -->
-                    <div class="w-30">
-                        <img src="img/business-feature-integrations-it.png" alt="immagine integrations">
-                        <h3>Passa di meno da uno strumento all'altro</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
-                    </div>
-                     <!-- /quarto box -->
-                       <!-- quinto box -->
-                    <div class="w-30">
-                        <img src="img/business-feature-multi-device.png" alt="Immagine multi device">
-                        <h3>Passa di meno da uno strumento all'altro</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
-                    </div>
-                     <!-- /quinto box -->
-                       <!-- sesto box -->
-                    <div class="w-30">
-                        <img src="img/business-feature-security.png" alt="Immagine security">
-                        <h3>Passa di meno da uno strumento all'altro</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis excepturi blanditiis molestiae est! Illum quas deleniti, alias, tempore id consequuntur maiores eius incidunt ratione odio, est nam? Rem, quisquam!</p>
-                    </div>
-                    <!-- /sesto box -->
-                    <!-- parte finale della sezione -->
-                    <div class="w-60">
-                        <h3>Più di 500.000 team utilizzano Dropbox Business</h3>
-                        <a href="">Scopri di più sui nostri prodotti</a>
-                    </div>
-                    <!-- /parte finale della sezione -->
-                </section>
-                <!-- /terza sezione  -->
-                <!-- quarta sezione -->
-                <section class="designit">
-                    <!-- colonna sinistra -->
-                    <div class="left-col">
-                            <div class="square design">
-                                <img src="img/designit.svg" alt="Logo Designit 2">
-                            </div>
-                            <div class="square a-s-u">
-                                <img src="img/arizona_state_university.svg" alt="Logo Designit 2">
-                            </div>
-                            <div class="square u-f">
-                                <img src="img/university_of_florida.svg" alt="Logo Designit 2">
-                            </div>
-                            <div class="square topps">
-                                <img src="img/topps.svg" alt="Logo Designit 2">
-                            </div>
-                        </div>                       
-                    </div>
-                    <!-- /colonna sinistra -->
-                    <!-- colonna centrale -->
-                    <div class="central-col">
-                        <img src="img/designit.svg" alt="Logo Designit">
-                        <div>
-                            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, tempore molestias iusto eos voluptatum sed delectus tenetur veritatis ad fuga, necessitatibus quos eaque magnam! Nulla ipsum modi assumenda quia aut?"</p>
-                        </div>                       
-                        <span> Morten Thomsen, Global IT Lead</span>
-                    </div>
-                    <!-- /colonna centrale -->
-                    <!-- colonna destra -->
-                    <div class="right-col">
-                            <div class="square world-bicycle">
-                                <img src="img/world_bicycle_relief.svg" alt="Logo Designit 2">
-                            </div>
-                            <div class="square hearst">
-                                <img src="img/hearst_corp.svg" alt="Logo Designit 2">
-                            </div>
-                            <div class="square lonely-planet">
-                                <img src="img/lonely_planet.svg" alt="Logo Designit 2">
-                            </div>
-                            <div class="square clear-channel">
-                                <img src="img/clear_channel.svg" alt="Logo Designit 2">
-                            </div>
-                        </div>                       
-                    </div>
-                    <!-- /colonna destra -->
-                </section>
-                <!-- /quarta sezione -->
-                <!-- quinta sezione -->
-                <section id="free-trial">
-                    <div class="container ">
-                        <div class="w-60">
-                            <h3>Porta Dropbox Business nella tua azienda</h3>
-                        </div>
-                        <div class="w-40">
-                            <button class="btn secondary-btn">Inizia la tua prova gratuita</button>
-                        </div>
-                    </div>
-                </section> 
-                <!-- /quinta sezione -->
-                <!-- sezione faq -->
-                <section class="faq container">
-                    <h3>Domande frequenti</h3>
-                    <ul>
-                        <li>
-                            <div>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</div>
-                            <i class="fa-solid fa-chevron-down"></i>
-                            <div class="hover-faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos necessitatibus architecto veritatis laborum repudiandae cumque commodi perferendis sunt, nihil quibusdam est hic dolorem earum ipsum placeat quasi reiciendis id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, modi est provident eos quo minus voluptas rerum, ex voluptatum illum sunt aspernatur? Dolorem iste aperiam a soluta, velit atque nobis.</div>
-                        </li>
-                        <li>
-                            <div>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</div>
-                            <i class="fa-solid fa-chevron-down"></i>
-                            <div class="hover-faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos necessitatibus architecto veritatis laborum repudiandae cumque commodi perferendis sunt, nihil quibusdam est hic dolorem earum ipsum placeat quasi reiciendis id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, modi est provident eos quo minus voluptas rerum, ex voluptatum illum sunt aspernatur? Dolorem iste aperiam a soluta, velit atque nobis.</div>
-                        </li>
-                        <li>
-                            <div>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</div>
-                            <i class="fa-solid fa-chevron-down"></i>
-                            <div class="hover-faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos necessitatibus architecto veritatis laborum repudiandae cumque commodi perferendis sunt, nihil quibusdam est hic dolorem earum ipsum placeat quasi reiciendis id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, modi est provident eos quo minus voluptas rerum, ex voluptatum illum sunt aspernatur? Dolorem iste aperiam a soluta, velit atque nobis.</div>
-                        </li>                   
-                    </ul>
-                </section>
-                <!-- /sezione faq -->
+                </div>
+            </section> 
+            <!-- /quinta sezione -->
+            <!-- sezione faq -->
+            <section id="faq" class="container">
+                <h3>Domande frequenti</h3>
+                <ul>
+                    <li>
+                        <div>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="hover-faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos necessitatibus architecto veritatis laborum repudiandae cumque commodi perferendis sunt, nihil quibusdam est hic dolorem earum ipsum placeat quasi reiciendis id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, modi est provident eos quo minus voluptas rerum, ex voluptatum illum sunt aspernatur? Dolorem iste aperiam a soluta, velit atque nobis.</div>
+                    </li>
+                    <li>
+                        <div>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="hover-faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos necessitatibus architecto veritatis laborum repudiandae cumque commodi perferendis sunt, nihil quibusdam est hic dolorem earum ipsum placeat quasi reiciendis id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, modi est provident eos quo minus voluptas rerum, ex voluptatum illum sunt aspernatur? Dolorem iste aperiam a soluta, velit atque nobis.</div>
+                    </li>
+                    <li>
+                        <div>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="hover-faq">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos necessitatibus architecto veritatis laborum repudiandae cumque commodi perferendis sunt, nihil quibusdam est hic dolorem earum ipsum placeat quasi reiciendis id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, modi est provident eos quo minus voluptas rerum, ex voluptatum illum sunt aspernatur? Dolorem iste aperiam a soluta, velit atque nobis.</div>
+                    </li>                   
+                </ul>
+            </section>
+            <!-- /sezione faq -->
         </main>
         <!-- /MAIN -->
         <!-- FOOTER -->
         <footer>
-            <div class="row container-big">
+            <div class="row container-big flex-between">
                 <!-- prima colonna info -->
                 <div class="info-footer">
                     <h4>Dropbox</h4>
@@ -477,7 +478,6 @@
                         </li>
                         <li>
                             <a href="">Funzioni</a>
-
                         </li>
                     </ul>
                 </div>
