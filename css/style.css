@@ -4,20 +4,34 @@
     margin:0;
 }
 /* COMMON */
+/* container base */
 .container{
     max-width: 1000px;
     margin: auto;
 }
+/* container hero e footer */
+.container-big{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 9vh;
+}
+/* display-flex */
 .flex{
     display: flex;
 }
+/* display-flex + flex-wrap*/
 .flex-wrap{
     flex-wrap: wrap;
     display: flex;
 }
+/* display-flex + justify-content:space-between*/
 .flex-between{
     display: flex;
     justify-content: space-between;
+}
+/* larghezza colonne  */
+.w-70{
+    width: 70%;
 }
 .w-60{
     width: 60%;
@@ -28,10 +42,8 @@
 .w-30{
     width: 30%;
 }
-.w-70{
-    width: 70%;
-}
 /* BUTTONS */
+/* bottone base */
 .btn{
     padding: 10px 20px;
     background-color: #0061FF;
@@ -39,35 +51,32 @@
     border: none;
     transition: background-color 0.5s scale 1s;
 }
-.btn:hover{
-    cursor: pointer;
-    scale: 1.1;
-    box-shadow: 1px 1px 1px 1px black;
-}
-.btn:active{
-    scale: 1;
-    box-shadow: inset 1px 1px 1px 1px black;
-}
+/* bottone bianco  */
 .secondary-btn{
     color: black;
     background-color: white;
     border: 1px solid;
 }
+/* hover bottoni */
+.btn:hover{
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 1px 1px 1px 1px black;
+}
+/* active bottoni */
+.btn:active{
+    scale: 1;
+    box-shadow: inset 1px 1px 1px 1px black;
+}
 /* TYPOGRAPHY */
+/* font pagina */
 body{
     font-family:'Open Sans', sans-serif;
 }
-.btn{
-    font-family: inherit;
-    font-size: inherit;
-}
+/* titoli */
 h1{
     font-size: 80px;
     font-weight: 800;
-}
-.fa-arrow-down{
-    font-size: 50px;
-    margin-top: 80px;
 }
 h2{
     font-weight: bold;
@@ -76,26 +85,38 @@ h2{
 h3{
     font-weight: bold;
     font-size: 25px;
+} 
+/* bottoni */
+.btn{
+    font-family: inherit;
+    font-size: inherit;
 }
+/* freccia hero */
+.fa-arrow-down{
+    font-size: 50px;
+    margin-top: 80px;
+}
+/* titoli info footer */
 .info-footer h4{
     font-size: 25px;
 }
-.contact-office{
-    font-weight: 700;
-    font-size: 15px;
-}
+/* titolo parte finale dropbox business */
 #dropbox-business .w-60 h3{
     font-size: 40px;
 }
+/* titolo free trial */
 #free-trial h3{
     font-size: 40px;
 }
+/* titolo faq */
 #faq h3{
     font-size: 40px;
 }
+/* list items faq */
 #faq li{
     font-weight: 700;
 }
+/* hover faq */
 #faq .hover-faq{
     font-weight: 400;
 }
@@ -109,77 +130,74 @@ header{
     z-index: 999;
     box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 20%);
 }
+/* liste delle nav */
 .list-inline{
     list-style: none;
     justify-content: space-around;
     align-items: center;
     padding-left: 0;
 }
+/* list items delle nav */
 .list-inline li{
     padding: 20px;
+    transition: background-color 0.5s ;
 }
+/* link delle nav */
 .list-inline li a{
     text-decoration: none;
     color: inherit;
 }
+/* ultimo list item della nav destra */
 .right-nav li:last-child{
     padding-left: 0;
 }
+/* bottone inizia */
 .right-nav button{
     padding: 6px 15px;
 }
-nav li{
-    transition: background-color 0.5s ;
-}
+/* hover list items delle nav */
 nav li:hover:not(.not-hover){
     background-color: rgba(200, 200, 200, 0.5);
     cursor: pointer;
 }
+/* hover logo header */
 .left-nav:first-child:hover{
     cursor: pointer;
 }
 /* MAIN */
 /* hero */
-.container-big{
-    max-width: 1200px;
-    margin: auto;
-    padding-top: 9vh;
-}
 #hero{
     background-color: #B4D0E7;
 }
+/* titolo hero */
 .title{
     max-width: 1100px;
     margin-bottom: -20px;
 }
-.content-hero{
+/* container hero */
+.container-hero{
     position: relative;
     top:80px;
     left: 0;
 }
-.hero-text{
-    width: 30%;
-}
-.hero-img{
-    width: 70%;
-}
-.hero-text button{
+/* bottone hero */
+#hero button{
     margin: 30px 0;
+    max-width: 65%;
 }
-.hero-img img{
+/* immagine hero */
+#hero img{
     width: 100%;
 }
-/* prima sezione */
+/*sezione BUSINESS PLAN*/
 #business-plan{
     padding-top: 16vh;
 }
-#business-plan label{
-    margin-right: 50px;
-    vertical-align: middle;
-}
+/* titolo sezione */
 #business-plan h2{
     margin-bottom: 70px;
 }
+/* input fatturazione */
 #business-plan input{
     appearance: none;
     border: 1px solid grey;
@@ -187,9 +205,16 @@ nav li:hover:not(.not-hover){
     border-radius: 100%;
     vertical-align: middle;
 }
+/* label input fatturazione */
+#business-plan label{
+    margin-right: 50px;
+    vertical-align: middle;
+}
+/* hover input fatturazione */
 #business-plan input:hover{
     cursor: pointer;
 }
+/* checked input fatturazione */
 #business-plan input:checked{
     box-shadow: inset 0 0 0 5px blue;
 }
@@ -198,11 +223,13 @@ nav li:hover:not(.not-hover){
     width:100%;
     margin-top: 50px;
 }
+/* destinatario del piano */
 .destinatario{
     padding: 10px 0;
     text-align: center;
     border-bottom: 2px solid #D0D0D3;
 }
+/* bordi e font-size piani */
 .plans .w-30,.orizontal-plan{
     border: 2px solid #D0D0D3;
     font-size: 14px;
@@ -212,23 +239,29 @@ nav li:hover:not(.not-hover){
     width: 100%;
     margin-top:40px ;
 }
+/* titolo piano orizzontale */
 .orizontal-plan h3{
     margin-bottom: 20px ;
 }
+/* colonna sinistra piano orizzontale*/
 .orizontal-plan .w-70{
     padding-right: 20px;
 }
+/* colonna destra piano orizzontale*/
 .orizontal-plan .w-30{
     padding: 0 0 0 30px;
 }
+/* bottone contatta l'ufficio vendite */
 .w-30 button{
     width: 100%;
 }
-.orizontal-plan .info-plan p{
-    margin-top: 55px;
-}
+/* info piano orizzontale */
 .orizontal-plan .info-plan{
     padding: 35px 30px;
+}
+/* testo info piano orizzontale */
+.orizontal-plan .info-plan p{
+    margin-top: 55px;
 }
 /* info businnes plan */
 .info-plan{
@@ -237,6 +270,7 @@ nav li:hover:not(.not-hover){
 .info-plan>*:not(.w-70){
     margin-bottom: 20px;
 }
+/* lista info del piano */
 .info-plan ul:not(.punti-salienti){
     list-style: none;  
     padding: 50px 0 0 0;
@@ -245,13 +279,16 @@ nav li:hover:not(.not-hover){
     display: flex;
     padding: 15px 0;
 }
+/* bottone prova gratis */
 .info-plan .btn{
     width: 100%;
     margin-bottom: 40px;
 }
+/* link acquista ora */
 .info-plan a{
     color: blue;
 }
+/* testo info del piano */
 .oppure {
     padding-bottom: 50px;
     border-bottom: 1px solid #D0D0D3;;
@@ -270,74 +307,85 @@ nav li:hover:not(.not-hover){
 .punti-salienti {
     padding: 0;
 }
+/* icone punti salienti */
 .punti-salienti i{
     color: #0061FF;
 }
-/* seconda sezione */
+/* sezione PARTNER*/
 #partner{
     display: flex;
     padding: 16vh 0;
 }
+/* colonna sinistra */
 #partner .w-60 img{
     width: 100%;
 }
+/* colonna destra */
 #partner .w-40{
     padding: 50px 50px;
 }
+/* testo colonna destra */
 #partner .w-40 p{
     margin: 15px 0 30px;
 }
-/* terza sezione */
+/* sezione DROPBOX BUSINESS*/
 #dropbox-business{
     justify-content: space-between;
 }
-/* stile box */
+/* box */
 #dropbox-business .w-30{
     margin-top: 70px;
 }
-#dropbox-business .w-30 h3{
-    margin: 25px 0;
-}
+/* immagini box */
 .w-30 img{
     width: 100%;
+}
+/* colonne */
+#dropbox-business .w-30 h3{
+    margin: 25px 0;
 }
 /* parte finale della sezione */
 #dropbox-business .w-60{
     margin: 200px 0 ;
 }
+/* link parte finale */
 #dropbox-business a{
     color: blue;
 }
+/* testo parte finale */
 #dropbox-business .w-60 h3{
     margin-bottom: 70px;
 }
-/* quarta sezione */
+/* sezione DESIGNIT*/
 /* colonne destra e sinistra */
 .col{
     width: calc(100vw/3);
     height: calc(100vw/3);
 }
 /* colonna centrale */
-.central img{
-    width: 50%;
-    margin-bottom: 2.5vw;
-    min-width: 100px;
-}
-.central p{
-    padding: 2.5vw 0;
-}
 .central{
     padding: 3vw;
     background-color: #F5F5F5;
     overflow: auto;
 }
+/* logo colonna centrale */
+.central img{
+    width: 50%;
+    margin-bottom: 2.5vw;
+    min-width: 100px;
+}
+/* linea divisoria */
 .central hr{
     background-color: #D0D0D3;
     width: 5.5vw;
     border: none;
     height: 1px;
 }
-/* quadrati */
+/* testo colonna centrale */
+.central p{
+    padding: 2.5vw 0;
+}
+/* quadrati delle colonne laterali*/
 .square{
     width: 50%;
     height: 50%;
@@ -345,11 +393,12 @@ nav li:hover:not(.not-hover){
     justify-content: center;
     align-items: center;
 }
+/* loghi dei quadrati */
 .square img{
     width: 50%;
     filter: invert(1);
 }
-/* sfondo quadrati */
+/* sfondo quadrati colonna sinistra */
 .design{
     background-color: #A2D39B;
     box-shadow: 0 0 0 1vw inset #D1E9CD;
@@ -363,6 +412,7 @@ nav li:hover:not(.not-hover){
 .topps{
     background-color: #FF1C1C;
 }
+/* sfondo quadrati colonna destra */
 .world-bicycle{
     background-color: #D5001F;
 }
@@ -375,7 +425,7 @@ nav li:hover:not(.not-hover){
 .clear-channel{
     background-color: #FFD830;
 }
-/* quinta sezione */
+/* sezione FREE     TRIAL */
 #free-trial .w-60{
     padding: 140px 110px 140px 0;
     color: #61082B;
@@ -390,13 +440,15 @@ nav li:hover:not(.not-hover){
     width: 100%;
     border: none;
 }
-/* sezione faq */
+/* sezione FAQ */
 #faq{
     padding-top: 15vh;
 }
+/* titolo faq */
 #faq h3{
     padding: 0 0 45px;
 }
+/* lista faq */
 #faq ul {
     list-style: none;
     font-family: inherit;
@@ -413,6 +465,7 @@ nav li:hover:not(.not-hover){
 #faq ul li:last-child{
     border-bottom: 2px solid #999999;
 }
+/* parte hover delle faq */
 .hover-faq{
     margin-top: 50px;
     display: none;
@@ -431,6 +484,7 @@ footer{
     background-color: black;
     color:white;
 }
+/* lista link footer */
 .info-footer{
     width: calc(100%-10px);
 }
@@ -443,10 +497,12 @@ footer{
 .info-footer ul li{
     padding-top: 20px;
 }
+/* link footer */
 .info-footer ul li a{
     text-decoration: none;
     color: inherit;
 }
+/* lingua */
 .language{
     padding: 50px 0;
     width: 75%;
